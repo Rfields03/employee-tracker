@@ -1,5 +1,5 @@
-const mysql = require("mysql2");
-const inquirer = require("inquirer");
+const mysql = require('mysql');
+const inquirer = require('inquirer');
 const { getMaxListeners, allowedNodeEnvironmentFlags } = require("process");
 const { functionDeclaration } = require("@babel/types");
 const { first } = require("rxjs");
@@ -11,9 +11,10 @@ require("console.table");
 const connection = mysql.createConnection({
   host: "localhost",
   port: "3001",
-  user: "rfields03@gmail.com",
-  password: "Af983426!@"
-})
+  user: "root",
+  password: "",
+  database: "employee_DB"
+});
 
 connection.connect(function (err) {
   if (err) throw err;
