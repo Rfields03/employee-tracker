@@ -10,7 +10,7 @@ if (process.env.JAWSDB_URL) {
     host: "localhost",
     port: 3001,
     user: "root",
-    password: "Af983426!@",
+    password: "",
     database: "employee_trackerDB"
   });
 }
