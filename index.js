@@ -9,11 +9,11 @@ const { query } = require("express");
 require("console.table");
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  port: "3001",
-  user: "root",
-  password: "",
-  database: "employee_DB"
+  host: 'localhost',
+  port: '3001',
+  user: 'root',
+  password: 'Af983426!@',
+  database: 'employee_trackerDB'
 });
 
 connection.connect(function (err) {

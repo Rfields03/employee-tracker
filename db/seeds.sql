@@ -1,6 +1,6 @@
 USE employee_trackerDB;
 
-INSERT INTO department (name)
+INSERT INTO notes (title, body)
 VALUES
 ("Sales"),
 ("Engineering"),
