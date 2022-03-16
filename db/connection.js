@@ -1,25 +1,15 @@
-var mysql = require("mysql");
+var mysql = require("mysql2");
+
 require("dotenv").config();
 
-var connection;
-
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-  connection = mysql.createConnection({
+const db = mysql.createConnection(
+  {
     host: "localhost",
-    port: 3001,
-    user: "root",
-    password: "",
-    database: "employee_trackerDB"
-  });
-}
+    user: process.env.DB_USER,
+    password: process.env.DB_PW,
+    database: "employee_trackerDB",
+  },
+  console.log("connected to the employee_trackerDB")
+)
 
-connection.config.typeCast = function(field, next) {
-  if (field.type == "TINY" && field.length == 1) {
-    return field.string() == "1"; // 1 = true, 0 = false
-  }
-  return next();
-};
-
-modeule.exports = connection;
+module.exports = db

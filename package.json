@@ -1,14 +1,14 @@
 {
   "name": "sql-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "AS A business owner I WANT to be able to view and manage the departments, roles, and employees in my company SO THAT I can organize and plan my business",
   "main": "server.js",
   "scripts": {
     "test": "jest",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Robert Field",
   "license": "ISC",
   "dependencies": {
     "console.table": "^0.10.0",
@@ -20,5 +20,13 @@
   },
   "devDependencies": {
     "jest": "^27.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rfields03/employee-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rfields03/employee-tracker/issues"
+  },
+  "homepage": "https://github.com/Rfields03/employee-tracker#readme"
 }
