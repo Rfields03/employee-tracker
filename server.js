@@ -13,8 +13,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-// TODO: Mount your HTML and API routes
-// https://expressjs.com/en/api.html#app.use
 app.use(apiRoutes);
 app.use(htmlRoutes);
 
