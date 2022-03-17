@@ -6,6 +6,7 @@ var apiRoutes = require("./routes/apiRoutes");
 var htmlRoutes = require("./routes/htmlRoutes");
 var connection = require("./routes/connection");
 var prompts = require("./routes/prompts");
+require("console.table");
 
 // Initialize the app and create a port
 var PORT = process.env.PORT || 3001;
