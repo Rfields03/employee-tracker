@@ -1,5 +1,5 @@
 var router = require('express').Router();
-var connection = require('../db/connection');
+var connection = require('./connection');
 
 router.get("/api/newNote", function(req, res) {
     connection.query("SELECT * FROM notes", function(err, dbnewNote) {

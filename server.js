@@ -1,17 +1,19 @@
 var express = require('express');
 var mysql = require("mysql2");
+var inquirer = require("inquirer");
+var table = require("console.table");
 var apiRoutes = require("./routes/apiRoutes");
 var htmlRoutes = require("./routes/htmlRoutes");
-// TODO: Import your route files from `route/`
+var connection = require("./routes/connection");
+var prompts = require("./routes/prompts");
 
 // Initialize the app and create a port
 var PORT = process.env.PORT || 3001;
 var app = express();
 
-// Set up body parsing, static, and route middleware
-app.use(express.urlencoded({ extended: true }));
+// Express middleware
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('public'));
 
 app.use(apiRoutes);
 app.use(htmlRoutes);
