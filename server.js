@@ -1,15 +1,16 @@
 var express = require('express');
+var mysql = require("mysql2");
 var apiRoutes = require("./routes/apiRoutes");
 var htmlRoutes = require("./routes/htmlRoutes");
 // TODO: Import your route files from `route/`
 
 // Initialize the app and create a port
-var app = express();
 var PORT = process.env.PORT || 3001;
+var app = express();
 
 // Set up body parsing, static, and route middleware
-app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(express.static('public'));
 
 // TODO: Mount your HTML and API routes
