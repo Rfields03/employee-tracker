@@ -31,7 +31,7 @@ When the user runs the application in Terminal:
 
 ## Walkthrough
 
-
+<img src="assets/sql-demo.gif" width="500" />
 
 ## Repository
 
