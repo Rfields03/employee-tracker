@@ -30,7 +30,7 @@ const whatToDo = [
         type: 'rawlist',
         name: 'userChoice',
         message: 'What would you like to do?',
-        choices: ['View all employees', 'View all roles', 'View all departments', 'Add employee'],
+        choices: ['View all employees', 'View all roles', 'View all departments', 'Add employee', 'Add role', 'Add department', 'Update an employee',],
     }
 ]
 
@@ -81,18 +81,13 @@ const start = () => { inquirer.prompt(whatToDo).then(answer => {
                         else console.log('bye')
                     })
                 })
-                console.log('user chose to see departments');
+                console.log('user chose to see department');
                 break;
-            case 'Add employee':
-                console.log('user chose to add an employee');
-                break;
-                //here you will add the rest of the cases
 
            default:
                break;
         }
-})
-
+    })
 }
 
 start();
