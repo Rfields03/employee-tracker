@@ -9,7 +9,7 @@ const db = mysql.createConnection(
     password: process.env.DB_PASSWORD,
     database: "employee_trackerdb",
   },
-  console.log("connected to the employee_trackerdb")
+  // console.log("connected to the employee_trackerdb")
 )
 
 db.connect(function(err) {

@@ -1,13 +1,13 @@
 USE employee_trackerdb;
 
-INSERT INTO departments (name)
+INSERT INTO department (department_name)
 VALUES
 ("Sales"),
 ("Engineering"),
 ("Finance"),
 ("Legal");
 
-INSERT INTO roles (title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
 VALUES
 ("Sales Lead", 100000, 1),
 ("Salesperson", 80000, 1),
@@ -17,7 +17,7 @@ VALUES
 ("Legal Team Lead", 250000, 4),
 ("Lawyer", 190000, 4);
 
-INSERT INTO employees (first_name, last_name, role_id)
+INSERT INTO employee (first_name, last_name, role_id)
 VALUES
 ("Oscar", "Wilde", 1),
 ("James", "Joyce", 2),
